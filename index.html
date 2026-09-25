@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iSyncX</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // 閲覧者の言語に合わせて振り分ける(日本語なら ja/、それ以外は en/)
+    (function () {
+      var langs = navigator.languages || [navigator.language || ""];
+      var ja = langs.some(function (l) { return /^ja\b/i.test(l); });
+      location.replace(ja ? "ja/" : "en/");
+    })();
+  </script>
+</head>
+<body>
+  <main class="wrap" style="padding-top: 48px;">
+    <p><a href="en/">English</a> · <a href="ja/">日本語</a></p>
+  </main>
+</body>
+</html>
