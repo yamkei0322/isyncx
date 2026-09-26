@@ -130,6 +130,18 @@ th { width: 28%; font-weight: 600; background: var(--accent-soft); }
   gap: 16px;
 }
 .get .card { display: flex; flex-direction: column; gap: 8px; }
+.get-btn {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--surface);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.get-btn:hover { filter: brightness(1.08); }
+.card p.note-small { font-size: 14px; }
 .soon {
   display: inline-block;
   align-self: flex-start;
