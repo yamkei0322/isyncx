@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iSyncX — iTunes と Android の同期アプリ</title>
-  <meta name="description" content="Windows の iTunes の楽曲とプレイリストを Wi-Fi で Android に入れ、Android で聴いた回数と付けた星を iTunes に書き戻す同期アプリ。">
+  <meta name="description" content="Windows の iTunes の楽曲とプレイリストを Wi-Fi で Android に入れ、Android で聴いた回数・付けた星・プレイリストへの追加を iTunes に書き戻す同期アプリ。">
   <link rel="icon" href="../assets/favicon.png">
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="alternate" hreflang="en" href="../en/">
@@ -34,15 +34,19 @@
         </div>
         <div class="card">
           <h3>再生回数なども iTunes に</h3>
-          <p>ただ曲を同期するだけでなく、Android のプレーヤー側で再生した回数や最後に再生した日も記録し、iTunes 側に反映できます。</p>
+          <p>ただ曲を同期するだけでなく、Android のプレーヤー側で再生した回数や最後に再生した日、プレイリストへの追加も記録し、iTunes 側に反映できます。</p>
         </div>
         <div class="card">
           <h3>レート(評価)も反映</h3>
           <p>Android のプレーヤーで付けたレート(評価)も iTunes 側に反映できます。iSyncX アプリの再生中画面やデバイスの通知欄から評価を付けられます。Poweramp と PlayerPro なら、アプリ内の評価機能と連動も可能です。</p>
         </div>
         <div class="card">
+          <h3>聴きながら、プレイリストに追加</h3>
+          <p>気に入った曲は、iSyncX アプリの再生中画面から、iTunes のプレイリストにそのまま追加できます。Android のプレイリストにはすぐに入り、次の同期で PC の iTunes のプレイリストにも反映されます。PC の前に戻らなくても、聴きながらライブラリを整理できます。</p>
+        </div>
+        <div class="card">
           <h3>iTunes のライブラリを守る安心設計</h3>
-          <p>操作ミスでレート(評価)を付けても大丈夫。iTunes に反映したレート(評価)は、Androidアプリ側で 1 件ずつロールバック(無かったこと)できます。書き込む日の最初には、iTunes のライブラリを自動でバックアップします。</p>
+          <p>操作ミスでレート(評価)を付けても大丈夫。iTunes に反映したレート(評価)は、Androidアプリ側で 1 件ずつロールバック(無かったこと)できます。プレイリストへの追加も同じように取り消せます。書き込む日の最初には、iTunes のライブラリを自動でバックアップします。</p>
         </div>
         <div class="card">
           <h3>クラウドもアカウントも不要</h3>
@@ -50,7 +54,7 @@
         </div>
         <div class="card">
           <h3>PC の曲は消さない</h3>
-          <p>iSyncX が PC に保存された曲やプレイリスト、iTunes のライブラリを削除することはありません。</p>
+          <p>iSyncX が PC に保存された曲やプレイリスト、iTunes のライブラリを削除することはありません(プレイリストへの追加を取り消したときに外すのは、iSyncX から追加したその 1 曲だけです)。</p>
         </div>
       </div>
     </section>
@@ -95,6 +99,15 @@
         <li>「再生中」タブで「許可する」を押し、通知へのアクセスを許可します(聴いた回数を記録するのに必要です)。</li>
       </ol>
       <p class="callout">PC の iSyncX は自動では起動しません。同期するときは、PC で iSyncX を起動しておいてください。</p>
+
+      <h3>聴いている曲をプレイリストに追加する</h3>
+      <ol class="steps">
+        <li>お好きなプレーヤーで曲を再生します。</li>
+        <li>iSyncX の「再生中」タブで「プレイリストに追加」を押します。</li>
+        <li>追加先のプレイリストを選びます。Android に同期しているプレイリストなら、その場で Android のプレイリストにも入ります。</li>
+        <li>次に「同期する」を押すと、PC の iTunes のプレイリストにも追加されます。</li>
+      </ol>
+      <p>間違えて追加したときは、すぐに出る「取り消す」か、履歴から取り消せます。追加先に選べるのは、iTunes で自分で作ったプレイリストです(スマートプレイリストには追加できません)。PC と Android の両方の iSyncX が 1.1.0 以降である必要があります。</p>
     </section>
 
     <section id="support">
